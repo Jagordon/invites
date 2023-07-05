@@ -1,17 +1,56 @@
 extends layout
 
 block content
-  h1= "Welcome to Jenny and James' wedding party invite"
-  .container 
+  h1
+    img(src="/images/pooper.png" alt="A party popper" class="popper flip")
+    span You're invited to Jenny and James' wedding party
+    img(src="/images/pooper.png" alt="A party popper" class="popper")
+  .container.big 
     div 
-      img(src="/images/me.jpg" alt="A boy")
+      div.fade
+        img(src="/images/me.jpg" alt="A boy")
     div 
-      p We are so pleased to invite everyone to our wedding
-  .container
+      h2 Where?
+      ul 
+        li 
+          a(href="https://www.citytavern.co.uk") City Tavern:   
+        li 10 Northumberland Road,
+        li Newcastle upon Tyne,
+        li 
+          a(href="https://goo.gl/maps/e35a9opicWHGC9TT9") NE1 8JF
+  .container.big
+    div(class="right")
+      h2 When?
+      ul 
+        li 
+          a(href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=Nzh1MTd2ZDg0Mjhmbjc1ZzF0NDZodWtiZXAgamFtZXMuYS5kLmdvcmRvbkBt&tmsrc=james.a.d.gordon%40gmail.com") Saturday     
+        li 2nd March
+        li 2024
+        li 7pm till late
     div 
-      p Here are the details 
-      p Where: 
-      p When 
-      p Contact
+      img(src="/images/Jenny.jpg" alt="A girl")
+  .container.small 
     div 
-      img(src="/images/jenny.jpg" alt="A girl")
+      div.fade
+        img(src="/images/me.jpg" alt="A boy")
+    div.centre
+      h2 Where?
+      ul 
+        li 
+          a(href="https://www.citytavern.co.uk") City Tavern:   
+        li 10 Northumberland Road,
+        li Newcastle upon Tyne,
+        li 
+          a(href="https://goo.gl/maps/e35a9opicWHGC9TT9") NE1 8JF
+      h2 When?
+        ul 
+          li 
+            a(href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=Nzh1MTd2ZDg0Mjhmbjc1ZzF0NDZodWtiZXAgamFtZXMuYS5kLmdvcmRvbkBt&tmsrc=james.a.d.gordon%40gmail.com") Saturday     
+          li 2nd March
+          li 2024
+          li 7pm till late
+      include faq.jade
+    div 
+      img(src="/images/Jenny.jpg" alt="A girl")   
+  div.big.container.full-width
+    include faq.jade

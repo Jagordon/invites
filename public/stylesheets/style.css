@@ -96,3 +96,17 @@ ul {
   text-align: center;
   font-size: xx-large;
 }
+.large {
+  font-size: large;
+}
+
+.kiss {
+  padding: 1em;
+  width: 80%;
+  margin: 0 auto;
+  display:block;
+}
+
+.wrap {
+  overflow-wrap: anywhere;
+}

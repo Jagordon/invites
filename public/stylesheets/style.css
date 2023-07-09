@@ -47,6 +47,9 @@ img {
 .small {
   display: grid;
 }
+.grow {
+  grid-column: 1 / 4
+}
 
 @media screen and (max-width: 900px) {
   .big {
